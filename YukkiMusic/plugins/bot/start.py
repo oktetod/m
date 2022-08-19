@@ -35,11 +35,11 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
-@app.on_message(
-    filters.command(get_command("START_COMMAND"))
-    & filters.private
-    & ~filters.edited
-    & ~BANNED_USERS
+#@app.on_message(
+ #   filters.command(get_command("START_COMMAND"))
+ #   & filters.private
+ #   & ~filters.edited
+  #  & ~BANNED_USERS
 )
 @LanguageStart
 async def start_comm(client, message: Message, _):
@@ -221,11 +221,11 @@ async def start_comm(client, message: Message, _):
             )
 
 
-@app.on_message(
-    filters.command(get_command("START_COMMAND"))
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
+#@app.on_message(
+  #  filters.command(get_command("START_COMMAND"))
+  #  & filters.group
+  #  & ~filters.edited
+  #  & ~BANNED_USERS
 )
 @LanguageStart
 async def testbot(client, message: Message, _):
